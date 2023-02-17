@@ -22,8 +22,8 @@ let modifiedCsvJson = [];
  * Global config.
  */
 const config = {
-  inputFile: './input/questions.csv',
-  outputFile: './output/date-format-questions.csv',
+  inputFile: './input/reviews.csv',
+  outputFile: './output/cleaned_reviews.csv',
 };
 
 /**
@@ -48,29 +48,45 @@ const csvWriter = createCsvWriter({
       title: 'product_id'
     },
     {
+      id: 'rating',
+      title: 'rating'
+    },
+    {
+      id: 'date',
+      title: 'date'
+    },
+    {
+      id: 'summary',
+      title: 'summary'
+    },
+    {
       id: 'body',
       title: 'body'
     },
     {
-      id: 'date_written',
-      title: 'date_written'
-    },
-    {
-      id: 'asker_name',
-      title: 'asker_name'
-    },
-    {
-      id: 'asker_email',
-      title: 'asker_email'
+      id: 'recommend',
+      title: 'recommend'
     },
     {
       id: 'reported',
       title: 'reported'
     },
     {
-      id: 'helpful',
-      title: 'helpful'
+      id: 'reviewer_name',
+      title: 'review_name'
     },
+    {
+      id: 'reviewer_email',
+      title: 'reviewer_email'
+    },
+    {
+      id: 'response',
+      title: 'response'
+    },
+    {
+      id: 'helpfulness',
+      title: 'helpfulness'
+    }
   ],
   alwaysQuote: true,
 });
@@ -100,7 +116,7 @@ function init() {
 function initFunctions() {
   console.log('Initiating script functionality...');
 
-  dateToTimestamptz('date_written')
+  dateToTimestamptz('date')
   /**
    * Once everything is finished, write to file.
    */
