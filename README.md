@@ -8,18 +8,17 @@ This script was born out of the need to modify specific column cells within a ve
 
 ## TO-DO:
 
->Standardize our date transformation method to allow for a wider range of inputs and outputs
->Create toString and toInt methods for easy type conversions
->Create methods to easily transform string case (Lower, Upper)
->Create method to transform binaries and booleans
-
-
-> Note: This application requires Node v8.16.0 or above.
+1. Standardize our date transformation method to allow for a wider range of inputs and outputs
+2. Create toString and toInt methods for easy type conversions
+3. Create methods to easily transform string case (Lower, Upper)
+4. Create method to transform binaries and booleans
 
 
 ## Install
 
 Fork, Clone, Navigate into Reviews-CSV directory.
+
+> Note: This application requires Node v8.16.0 or above.
 
 ## Usage:
 
