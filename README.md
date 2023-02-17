@@ -2,36 +2,34 @@
 
 This is a Node.js script that will allow you to parse a CSV File with Javascript, modify its contents, and output a new CSV file.
 
-This script will create a readable stream to your CSV file, parse the data into a JSON object and allow you to use modern Javascript functions on it before it outputting the everything into a new CSV file.
+This script will reach each row of your CSV file and gives you the ability to easily transform cell values per a specific column. This script accomplishes this task without additional libraries or packages.
 
-This script was born out of the need to modify chunks of data within a very large CSV file, and whilst I know nothing about CSVs, I do know Javascript! So I wanted to share this boilerplate for anybody else in my position.
+This script was born out of the need to modify specific column cells within a very large CSV file, using a very underpowered machine. Future updates will include common transformation methods outlined below.
 
-> Note: Both csv-parser and csv-writer requite Node v8.16.0 or above. I have been using this on both Node 13.x and 14.x
+## TO-DO:
+
+>Standardize our date transformation method to allow for a wider range of inputs and outputs
+>Create toString and toInt methods for easy type conversions
+>Create methods to easily transform string case (Lower, Upper)
+>Create method to transform binaries and booleans
+
+
+> Note: This application requires Node v8.16.0 or above.
 
 
 ## Install
 
-Using npm:
-
-```
-npm install
-```
-Using yarn:
-
-```
-yarn install
-```
+Fork, Clone, Navigate into Reviews-CSV directory.
 
 ## Usage:
 
-1. Add the CSV file that you'd like to modify in the `input` folder.
-2. Modify the `config` object with the name of your input file.
-3. Add your own ES6 functions within `initFunctions()`
-4. Navigate to the repo directory in your terminal and run `node index.js`
+0. Designate CSV file to read. We chose './input/reviews.csv')
+1. Designate column to edit. We chose 'date'
+2. Select a given cell. See 'currentDateValue'
+3. Transform it. We changed the date to ISO.
+4. Run fs.appendFile with the name and location of the new CSV file. We chose reviews2.csv and root directory.
+5. To begin, run 'node csvDateTransformer.js' in your terminal from the root directory of this application
 
 ## Documentation
 
-This script wouldn't be possible without these two excellent modules, both of which have pretty extensive documentation should you want to extend this script:
-
-https://github.com/mafintosh/csv-parser
-https://github.com/ryu1kn/csv-writer
+https://nodejs.org/dist/latest-v6.x/docs/api/fs.html
