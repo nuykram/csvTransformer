@@ -1,5 +1,9 @@
 ### CSV (UNIX) ➡️ CSV (ISO)
 
+![Top Language](https://img.shields.io/github/languages/top/HR-FEC-Team2/superior)
+![Last Commit](https://img.shields.io/github/last-commit/HR-FEC-Team2/superior)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/HR-FEC-Team2/superior)
+
 This is a Node.js script that will allow you to parse a CSV File with Javascript, modify its contents, and output a new CSV file.
 
 This script will reach each row of your CSV file and gives you the ability to easily transform cell values per a specific column. This script accomplishes this task without additional libraries or packages.
