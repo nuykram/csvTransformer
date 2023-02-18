@@ -5,6 +5,14 @@
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/eriknewland/Reviews-CSV)
 
 
+### Written in
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+
+### Powered by
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+
 This is a Node.js script that will allow you to parse a CSV File with Javascript, modify its contents, and output a new CSV file.
 
 This script will reach each row of your CSV file and gives you the ability to easily transform cell values per a specific column. This script accomplishes this task without additional libraries or packages.
