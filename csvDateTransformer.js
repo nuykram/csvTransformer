@@ -18,7 +18,7 @@ const replaceDateValuesInLargeCsvFile = filePath => {
       dateColumnIndex = header.findIndex(column => column === 'date');
       // Join the header back together and write to file
       const headerLine = header.join(',');
-      fs.appendFile('reviews3.csv', `${headerLine}\n`, err => {
+      fs.appendFile('./output/cleaned_reviews.csv', `${headerLine}\n`, err => {
         if (err) console.log(err);
       });
     } else {
@@ -30,7 +30,7 @@ const replaceDateValuesInLargeCsvFile = filePath => {
 
       // Join the records back together and write to file
       const updatedLine = records.join(',');
-      fs.appendFile('reviews3.csv', `${updatedLine}\n`, err => {
+      fs.appendFile('./output/cleaned_reviews.csv', `${updatedLine}\n`, err => {
         if (err) console.log(err);
       });
     }
@@ -38,12 +38,3 @@ const replaceDateValuesInLargeCsvFile = filePath => {
 };
 
 replaceDateValuesInLargeCsvFile('./input/reviews.csv')
-/*
-  // ====== USAGE ====== //
--1. Designate CSV file to read. We chose './input/reviews.csv')
-0. Designate column to edit. We chose 'date'
-1. Select a given cell. See 'currentDateValue'
-2. Transform it. We changed the date to ISO.
-3. Run fs.appendFile with the name and location of the new CSV file. We chose reviews2.csv and root directory.
-4. To begin, run 'node csvDateTransformer.js' in your terminal from the root directory of this application
-*/
