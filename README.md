@@ -1,8 +1,9 @@
 ### CSV (UNIX) ➡️ CSV (ISO)
 
-![Top Language](https://img.shields.io/github/languages/top/Reviews-CSV)
-![Last Commit](https://img.shields.io/github/last-commit/Reviews-CSV)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/Reviews-CSV)
+![Top Language](https://img.shields.io/github/languages/top/Reviews-CSV/main)
+![Last Commit](https://img.shields.io/github/last-commit/Reviews-CSV/main)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/Reviews-CSV/main)
+
 
 This is a Node.js script that will allow you to parse a CSV File with Javascript, modify its contents, and output a new CSV file.
 
