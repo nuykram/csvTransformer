@@ -1,4 +1,4 @@
-### CSV ➡️ JSON ➡️ CSV
+### CSV (UNIX) ➡️ CSV (ISO)
 
 This is a Node.js script that will allow you to parse a CSV File with Javascript, modify its contents, and output a new CSV file.
 
